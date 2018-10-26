@@ -43,3 +43,10 @@
   - `angular.json` : aka Angular Workspace
   - Copy from a new Angular 6 project and past it in project folder.
   - update all project infomations such as project name and file path
+
+## Create testing files in e2e/src
+  - `app.po.ts` : Page Object Class file.
+  - `app.e2e-spec.ts` : Actual E2E testing file.
+
+## Let's test
+  - Run `ng e2e`.
