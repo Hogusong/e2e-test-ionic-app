@@ -38,3 +38,8 @@
   - `karma.conf.js` : Karma knows about your project in order to test it via this configuration file. Here [more information](https://karma-runner.github.io/1.0/config/configuration-file.html)
   - `polyfills.ts`  : polyfills.ts file is auto generated while creating an Angular application using Angular Cli. It makes your application compatible for different browsers. Here [more information](https://angular.io/guide/browser-support)
   - `tsconfig.spec.json` and `tsconfig.app.json`: These are TypeScript config files for unit testing. 
+
+## Create a config file for Angular 6 project
+  - `angular.json` : aka Angular Workspace
+  - Copy from a new Angular 6 project and past it in project folder.
+  - update all project infomations such as project name and file path
