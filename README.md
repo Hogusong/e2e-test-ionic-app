@@ -1,20 +1,20 @@
 # my-ionic-app
-To set up e2e testing 
+  - To set up e2e testing 
 -----------------------
 
-# Create a new ionic project "my-ionic-app"
-  - Install ionic globally.
+## Create a new ionic project "my-ionic-app"
+  - Install ionic globally. 
       Run `npm install -g ionic@latest`
-  - create a new project. We recommend using the tutorial starter for your first app. See [Starter Templates](https://ionicframework.com/docs/cli/starters.html) for a full list.
+  - create a new project. We recommend using the tutorial starter for your first app. See [Starter Templates](https://ionicframework.com/docs/cli/starters.html) for a full list. 
       Run `ionic start my-ionic-app`
 
-# Update package.json
+## Update package.json
 
-## Install dependencies
+### Install dependencies
   - npm install @angular/router@5.2.11
   - npm install core-js
 
-## Install devDependencies
+### Install devDependencies
   - npm install --save-d @angular-devkit/build-angular
   - npm install --save-d @angular/cli
   - npm install --save-d @angular/compiler-cli
@@ -27,18 +27,14 @@ To set up e2e testing
   - npm install --save-d protractor ts-node tslint
   - npm install --save-d webdriver-manager webpack
 
-# Create e2e folder in working root
+## Create e2e folder in working root
   - e2e folder contains one subfolder and two config files.
-    - "src" : subfolder
-    - "protractor.conf.js" : Protractor config file 
-    - "tsconfig.e2e
-  - src folder contains all testing files such as *.e2e-spec.ts and *.po.ts
-  - Structure of e2e folder
-          my-ionic-app
-            e2e
-              src
-                app.e2e-spec.ts
-                app.po.ts
-              protractor.conf.js
-              tsconfig.e2e.json
-
+    - `src` : subfolder
+    - `protractor.conf.js` : Protractor config file 
+    - `tsconfig.e2e.json`  : TypeScript config file for end-to-end testing
+  - src folder contains all testing files as `*.e2e-spec.ts and *.po.ts`
+ 
+## Create several config files in src folder
+  - `karma.conf.js` : Karma knows about your project in order to test it via this configuration file. Here [more information](https://karma-runner.github.io/1.0/config/configuration-file.html)
+  - `polyfills.ts`  : polyfills.ts file is auto generated while creating an Angular application using Angular Cli. It makes your application compatible for different browsers. Here [more information](https://angular.io/guide/browser-support)
+  - `tsconfig.spec.json` and `tsconfig.app.json`: These are TypeScript config files for unit testing. 
